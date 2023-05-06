@@ -14,7 +14,7 @@ body {
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     background-color: #EE6352;
     display: flex;
     flex-direction: row;
@@ -686,8 +686,12 @@ iframe {
         flex-wrap: wrap;
     }
 
-    .social-box {
-        display: flex:flex-direction:column;
+    #nav-logo {
+        width: 75px !important;
+    }
+
+    .search {
+        bottom: 10px;
     }
 
     .service-desc {
@@ -720,13 +724,17 @@ iframe {
 
     #nav-bar {
         flex-wrap: wrap;
-        font-size: .5em;
+        font-size: .8em;
     }
 
     .social-box {
-        display: flex:flex-direction:column;
+        display: flex;
     }
 
+    .social-box>.some-links {
+        font-size: 25px;
+        padding: 0 10px 0 10px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -750,7 +758,7 @@ iframe {
 
 @media screen and (max-width: 600px) {
     #banner-img {
-        height: 70vh;
+        background: fixed 100vh center url("https://images.unsplash.com/photo-1505996000701-debaf9186e2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1772&q=80");
     }
 
     .button-57 {
@@ -879,7 +887,7 @@ iframe {
     iframe {
         position: relative;
         width: 80vw;
-        margin-bottom: 1em;
+        top: 0;
     }
 
     #nav-logo {
@@ -907,3 +915,4 @@ iframe {
         display: block;
         text-align: left;
     }
+}
